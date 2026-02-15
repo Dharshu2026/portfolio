@@ -65,65 +65,69 @@
 
 <main class="main">
 
-  <section id="projects" class="services section">
+<section id="projects" class="services section">
+  <div class="container">
+    <div class="row gy-4 justify-content-center">
 
-    <div class="container section-title" data-aos="fade-up">
-      <h2>My Projects</h2>
-      <p>Practical applications and web solutions built using my technical expertise.</p>
-    </div><div class="container" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="row justify-content-center g-5">
-
-        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
-          <div class="service-item">
-            <div class="service-icon">
-              <i class="bi bi-bicycle"></i>
-            </div>
-         <div class="service-content">
-  <h3>WheelzOn - Bike Rental System</h3>
-  <p>
-    <strong>Project Overview:</strong> A full-stack bike rental solution designed to streamline the booking process through a modern web interface.
-  </p>
-  
-  <ul style="font-size: 14px; list-style: none; padding: 0;">
-    <li><i class="bi bi-check-circle-fill me-2" style="color: #1387c1;"></i> <strong>Automated Emails:</strong> Integrated <b>Laravel Mail</b> for sending instant booking confirmations to users.</li>
-    <li><i class="bi bi-check-circle-fill me-2" style="color: #1387c1;"></i> <strong>Database Management:</strong> Efficiently handled bike listings and user records using <b>MySQL</b>.</li>
-    <li><i class="bi bi-check-circle-fill me-2" style="color: #1387c1;"></i> <strong>Responsive UI:</strong> Developed with a <b>Bootstrap</b> template for a mobile-first and professional design.</li>
-  </ul>
-
-  <div class="mt-4">
-    <a href="http://dharshu-wheelzon.rf.gd" target="_blank" class="btn btn-outline-primary" style="border-radius: 50px; border-color: #1387c1; color: #1387c1;">
-      <span>View Live Demo</span>
-      <i class="bi bi-arrow-up-right"></i>
-    </a>
-  </div>
-</div>
-          </div>
+      <div class="col-lg-6 col-md-6" data-aos="fade-up">
+        <div class="project-glass-card">
+          <div class="icon-circle"><i class="bi bi-bicycle"></i></div>
+          <span class="tech-stack-badge">Laravel | MySQL | Bootstrap</span>
+          <h3>WheelzOn - Bike Rental System</h3>
+          <p>My initial full-stack project designed to automate the bike rental process. It features a secure booking workflow and a responsive user interface.</p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check2-circle"></i> <b>Automated Notifications:</b> Integrated Laravel Mail for real-time booking alerts.</li>
+            <li><i class="bi bi-check2-circle"></i> <b>System Stability:</b> Verified through comprehensive Unit and Integration testing.</li>
+          </ul>
+          <a href="http://dharshu-wheelzon.rf.gd" target="_blank" class="btn-demo">Live Demo <i class="bi bi-box-arrow-up-right"></i></a>
         </div>
-        
-       <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
-  <div class="service-item">
-    <div class="service-icon">
-      <i class="bi bi-person-badge" style="color: #1387c1;"></i>
-    </div>
-    <div class="service-content">
-      <h3>Personal Portfolio Website</h3>
-      <p>A highly responsive portfolio developed using <strong>Bootstrap 5 and AOS</strong>. Focused on modern UI/UX principles to showcase my journey and skills.</p>
-      
-      <ul style="font-size: 14px; list-style: none; padding: 0;">
-        <li><i class="bi bi-check-circle-fill me-2" style="color: #1387c1;"></i> <strong>Responsiveness:</strong> Mobile-first design for all devices.</li>
-        <li><i class="bi bi-check-circle-fill me-2" style="color: #1387c1;"></i> <strong>Animations:</strong> Smooth scrolling effects using AOS library.</li>
-      </ul>
+      </div>
 
-      <a href="index.html" class="btn btn-outline-primary mt-3" style="border-radius: 50px; color: #1387c1; border-color: #1387c1;">
-        <span>View Project</span>
-        <i class="bi bi-arrow-right"></i>
-      </a>
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-glass-card">
+          <div class="icon-circle"><i class="bi bi-receipt"></i></div>
+          <span class="tech-stack-badge">PHP | Laravel | MySQL</span>
+          <h3>Retail Billing & Invoice Management</h3>
+          <p>Developed for "NEW P K AGENCY" to streamline retail and distribution billing. This system helps manage daily sales records and customer invoices efficiently.</p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check2-circle"></i> <b>Invoice Generation:</b> Automated billing for retail customers and wholesale distributors.</li>
+            <li><i class="bi bi-check2-circle"></i> <b>Database Integrity:</b> Utilized MySQL to maintain accurate transaction logs and inventory data.</li>
+          </ul>
+          <a href="https://github.com/Dharshu2026" target="_blank" class="btn-demo">GitHub Repo <i class="bi bi-github"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-glass-card">
+          <div class="icon-circle"><i class="bi bi-shield-lock"></i></div>
+          <span class="tech-stack-badge">Python | Flask | SVM | Laravel</span>
+          <h3>AI-Driven Financial Fraud Detection</h3>
+          <p>A machine learning-based framework designed to predict credit card defaults using Support Vector Machines (SVM) for risk mitigation.</p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check2-circle"></i> <b>Data Drift Monitoring:</b> Tracks shifts in consumer spending to maintain prediction accuracy.</li>
+            <li><i class="bi bi-check2-circle"></i> <b>Dynamic Retraining:</b> Integrated a Python Flask API to retrain the model with fresh data automatically.</li>
+          </ul>
+          <span class="status-badge ongoing">Ongoing – Final Year Project</span>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="project-glass-card">
+          <div class="icon-circle"><i class="bi bi-person-workspace"></i></div>
+          <span class="tech-stack-badge">HTML5 | CSS3 | Bootstrap 5 | AOS</span>
+          <h3>Professional Developer Portfolio</h3>
+          <p>A modern, responsive digital showcase highlighting my technical expertise and professional growth as a Junior Web Developer.</p>
+          <ul class="feature-list">
+            <li><i class="bi bi-check2-circle"></i> <b>Modern UI/UX:</b> Features smooth scrolling, AOS animations, and a mobile-first design.</li>
+            <li><i class="bi bi-check2-circle"></i> <b>Project Showcase:</b> An interactive gallery demonstrating skills in Laravel and PHP development.</li>
+          </ul>
+          <a href="index.html" class="btn-demo">View Portfolio <i class="bi bi-link-45deg"></i></a>
+        </div>
+      </div>
+
     </div>
   </div>
-</div>
-      
-  </section></main>
+</section></main>
   <footer id="footer" class="footer">
 
    

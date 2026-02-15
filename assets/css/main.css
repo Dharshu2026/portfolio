@@ -1564,9 +1564,10 @@ section,
   transition: transform 0.4s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
-.services .service-item:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transform: translateY(-5px);
+.service-item:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .services .service-item:hover::before {
@@ -1643,6 +1644,16 @@ section,
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+.services .container {
+    max-width: 1140px; /* Standard width */
+    margin: 0 auto;    /* Center the whole container */
+    padding: 0 15px;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
 @media (max-width: 767.98px) {
   .services .service-item {
     padding: 1.5rem;
@@ -1920,7 +1931,84 @@ section,
     margin-top: 4rem;
   }
 }
+.project-glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px 20px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
 
+.project-glass-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #0563bb;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  background: rgba(5, 99, 187, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: #0563bb;
+  font-size: 26px;
+  transition: 0.4s;
+}
+
+.project-glass-card:hover .icon-circle {
+  background: #0563bb;
+  color: #fff;
+  transform: rotateY(180deg);
+}
+
+.tech-stack-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #0563bb;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.status-badge {
+  font-size: 11px;
+  padding: 4px 12px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.status-badge.ongoing { background: rgba(255, 193, 7, 0.2); color: #ffc107; }
+.status-badge.personal { background: rgba(23, 162, 184, 0.2); color: #17a2b8; }
+
+.btn-demo {
+  color: #0563bb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 15px;
+  border: 1px solid #0563bb;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-demo:hover {
+  background: #0563bb;
+  color: #fff;
+}
 .service-details .overview-card,
 .service-details .success-story,
 .service-details .consultation-form {
@@ -2692,6 +2780,85 @@ section,
     flex-direction: column;
     gap: 1rem;
   }
+
+
+  /* Premium Project Card Style */
+.project-card-premium {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 35px;
+    transition: all 0.4s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card-premium:hover {
+    transform: translateY(-12px);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 40px rgba(19, 135, 193, 0.2);
+}
+
+.project-card-premium .icon-box {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-color), #00d4ff);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(19, 135, 193, 0.3);
+}
+
+.project-card-premium .icon-box i {
+    font-size: 28px;
+    color: #fff;
+}
+
+.project-card-premium h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.project-card-premium p {
+    color: #b0b0b0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.tech-stack-pill {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(19, 135, 193, 0.1);
+    color: var(--accent-color);
+    border-radius: 50px;
+    font-size: 12px;
+    margin-right: 5px;
+    margin-top: 10px;
+    border: 1px solid rgba(19, 135, 193, 0.3);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 25px;
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.project-link:hover {
+    gap: 15px;
+    color: #fff;
+}
 
   .portfolio-details .project-meta .date-client {
     flex-direction: column;
